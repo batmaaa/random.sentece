@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+         p{
+             font-family: 'Courier New', Courier, monospace;
+             font-size: 30px;
+         }
+    </style>
+</head>
+<body>
+    <h1 id="text"></h1>
+    <button onclick="random();">end dar</button>
+</body>
+    <script>
+        function random(){
+            var ner=['mc','urtaa','naraa','zolboo','gegenee','saihnaa','tuya',
+            'dorjoo','bagsh','bat','suren','jamana'];
+            var word=[' ulaanbaatar',' suhbaatar',' hovd',' selenge',' erdnet',' govi altai',
+            ' bayanhongor',' moron  ',' hentii',' baga nuur',' suhbaatar',' nalaih',];
+            var ug=[' duu sonsov.',' serlee.',' s irlee.',' yvlaa.',' hool idev.',' coffee uusan baina.',
+            ' naimaa hiiv.',' yvlaa.',' aaruul idev.',' hogjim toglov.',' hel surav.',' gold selev.'];
+
+            document.getElementById("text").innerHTML = (ner[Math.floor(Math.random()*12)] + word[Math.floor(Math.random()*12)] + ug[Math.floor(Math.random()*12)])
+        }
+    </script>
+</html>
